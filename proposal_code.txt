@@ -1,0 +1,228 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\geometry{
+  left=30mm,
+  right=30mm,
+  top=25mm,
+  bottom=25mm
+}
+
+% Custom commands (easy to reuse)
+\newcommand{\ProjectTitle}{Vehicle Transport Management Software}
+\newcommand{\SubjectTitle}{Software Engineering Project Proposal}
+\newcommand{\Department}{Department of Computer Science}
+\newcommand{\University}{Your University Name}
+\newcommand{\TeamCaption}{Team Members}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+\begin{center}
+    \includegraphics[width=4cm]{logo.png}
+\end{center}
+
+{\Huge\bfseries Namal University Mianwali \par}
+  \vspace{2.0cm}
+   {\large \Department \par}
+  \vspace{1.0cm}
+   {\Large\bfseries \SubjectTitle \par}
+  \vspace{1cm}
+{\large\bfseries Title: \par}
+  \vspace{0.5cm}
+
+  {\large\bfseries \ProjectTitle \par}
+  \vspace{0.5cm}
+
+ 
+ 
+
+  
+
+
+  \begin{spacing}{1.1}
+  \RaggedCenter
+  {\bfseries \TeamCaption:}\par
+  \vspace{0.6cm}
+  \begin{tabular}{ >{\bfseries}l l }
+    Name:       & Momina Umar \\
+    Roll No.:   & NUM-BSCS-2024-36 \\
+    Email:      & {bscs24f36@namal.edu.pk} \\
+    \addlinespace
+    Name:       & Tahira Hanif \\
+    Roll No.:   &  NUM-BSCS-2024-76\\
+    Email:      & {bscs24f76@namal.edu.pk}\\ 
+     \addlinespace
+     Name:       & Mubashir Aman \\
+    Roll No.:   &  NUM-BSCS-2024-37\\
+    Email:      & {bscs24f37@namal.edu.pk}
+    % repeat rows as needed
+  \end{tabular}
+  \end{spacing}
+
+  \vfill
+ \begin{right}{\small \textbf{Submission Date: November 9, 2025}}\\[1cm]
+ \end{right}
+  {\large \today\par}
+\end{titlepage}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\setcounter{tocdepth}{2} % 2 = include sections and subsections
+\tableofcontents
+\newpage
+\begin{center}
+    \textbf{\Large REQUIREMENT PROVIDER AGREEMENT}\\
+    \vspace{0.3cm}
+    \large Vehicle Transport Management System (VTMS)\\
+    \vspace{0.8cm}
+    \normalsize \today
+\end{center}
+
+\vspace{1cm}
+
+\textbf{This Agreement is entered into on} \underline{\hspace{1cm}04} / \underline{\hspace{1cm}Nov} / \underline{\hspace{1cm}2025} (DD/MM/YYYY)
+
+\textbf{BETWEEN}
+
+\textbf{1. Mr. Ahtesham Abdullah}\\
+Final-Year Student\\
+Schechian University, China\\
+(Hereinafter referred to as the \textbf{Requirement Provider})
+
+\textbf{AND}
+
+\textbf{2. The Development Team consisting of:}
+\begin{itemize}
+    \item Ms. Tahira Hanif
+    \item Ms. Momina Umar
+    \item Mr. Mubashir Aman
+\end{itemize}
+(Hereinafter collectively referred to as the \textbf{Development Team})
+
+\vspace{0.8cm}
+
+\textbf{THE PARTIES MUTUALLY AGREE AS FOLLOWS:}
+
+\begin{enumerate}
+    \item \textbf{Project Purpose}\\
+    The Requirement Provider has proposed the development of a \textbf{Transport Exchange System (TES)}. The Development Team agrees to design, develop, test, and deliver the complete system as an academic software engineering project.
+
+    \item \textbf{Obligations of the Requirement Provider}
+    \begin{itemize}
+        \item Provide complete and final requirements no later than \underline{\hspace{4.5cm}}.
+        \item Attend weekly meetings and respond to queries/feedback within 48 hours.
+        \item Review and approve all milestones (design, prototype, final version).
+        \item Maintain confidentiality of all source code and project materials.
+    \end{itemize}
+
+    \item \textbf{Obligations of the Development Team}
+    \begin{itemize}
+        \item Develop the system strictly according to the agreed requirements.
+        \item Provide weekly progress updates and live demonstrations.
+        \item Deliver complete source code, documentation, deployed application, and user manual.
+        \item Offer 30 days of free post-delivery support for bug fixes.
+    \end{itemize}
+
+    \item \textbf{Intellectual Property}
+    \begin{itemize}
+        \item The Requirement Provider retains ownership of the project concept and idea.
+        \item The Development Team retains ownership of the source code and implementation.
+        \item Upon final acceptance, the Development Team grants the Requirement Provider a perpetual, royalty-free, worldwide license to use, modify, and distribute the software for any purpose.
+    \end{itemize}
+
+    \item \textbf{Confidentiality, Ethics \& Governing Law}
+    \begin{itemize}
+        \item Both parties shall treat all shared information, code, designs, and communications as strictly confidential and shall not disclose them to any third party without written consent.
+        \item Both parties agree to act honestly, ethically, and in good faith throughout the project duration.
+        \item This agreement shall be governed by and construed in accordance with the laws of Pakistan.
+    \end{itemize}
+
+    \item \textbf{Changes \& Termination}
+    \begin{itemize}
+        \item Any change in requirements after the freeze date must be mutually agreed in writing.
+        \item Either party may terminate this agreement with 10 days written notice.
+    \end{itemize}
+\end{enumerate}
+
+\vfill
+
+\textbf{IN WITNESS WHEREOF}, the parties hereby execute this agreement:
+
+\vspace{1.2cm}
+
+\begin{tabular}{p{8cm} p{8cm}}
+    \centering
+    \underline{\hspace{7cm}} & \underline{\hspace{7cm}} \\
+    \textbf{Ahtesham Abdullah} & \textbf{Tahira Hanif} \\
+    \textit{Requirement Provider} & \textit{Team Member} \\
+   
+    
+    & \underline{\hspace{7cm}} \\
+    & \textbf{Momina Umar} \\
+    & \textit{Team Member} \\
+   
+    
+    & \underline{\hspace{7cm}} \\
+    & \textbf{Mubashir Aman} \\
+    & \textit{Team Member} \\
+   
+\end{tabular}
+
+\vfill
+
+\begin{center}
+    \textit{Page 1 of 2}
+\end{center}
+
+\clearpage
+
+\begin{center}
+    \textbf{\Large SIGNATURE OF REQUIREMENT PROVIDER}\\
+    \vspace{2cm}
+     \includegraphics[width=5cm,keepaspectratio]{sign.jpg} \\[0.3cm] % make sure sign.png is in same folder
+    \rule{12cm}{0.5pt}\\
+    \textbf{Ahtesham Abdullah}\\
+    Requirement Provider\\
+     Date: \underline{4 Nov, 2025}
+    
+    \vspace{2.5cm}
+    
+    \textbf{\Large SIGNATURES OF DEVELOPMENT TEAM}\\
+    \vspace{1.5cm}
+\begin{tabular}{p{7cm} p{7cm}}
+    \raggedright \includegraphics[width=5cm,keepaspectratio]{signature(1).png} &
+    \raggedleft \includegraphics[width=5cm,keepaspectratio]{signature.png} \\
+    \raggedright \rule{5cm}{0.5pt} & \raggedleft \rule{5cm}{0.5pt} \\
+    \raggedright \textbf{Tahira Hanif} & \raggedleft \textbf{Momina Umar} 
+\end{tabular}
+
+\vspace{1.5cm}
+ \RaggedCenter \includegraphics[width=5cm,keepaspectratio]{signature(2).png} &
+\rule{12cm}{0.5pt} % for next signature or line
+
+    \textbf{Mubashir Aman}\\
+  
+
+\end{center}
+
+\vfill
+
+\begin{center}
+    \textit{This agreement consists of 2 pages. Both pages must be signed.}\\
+    \textit{Page 2 of 2}
+\end{center}
+\section{Introduction}
+Efficient vehicle transportation is important for timely deliveries for building the trust of customers in any organization. Many Origanizations still rely on manual system of tracking records for vehical transportation which leads to many complications including risks of lost of data , waste of time ,difficuly in keeping billing records ,duplication of data and also mismanagement of tracking of orders. To configure all these issues , we are building a computarized transport management system to track orders in real time, keep all the documentation records digitally, generate payments easily , to scale the buisiness across other countries and to increase productivity. This will increase co-ordination among stakeholders and build trust among customers. 
+
