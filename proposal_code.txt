@@ -226,3 +226,48 @@ Schechian University, China\\
 \section{Introduction}
 Efficient vehicle transportation is important for timely deliveries for building the trust of customers in any organization. Many Origanizations still rely on manual system of tracking records for vehical transportation which leads to many complications including risks of lost of data , waste of time ,difficuly in keeping billing records ,duplication of data and also mismanagement of tracking of orders. To configure all these issues , we are building a computarized transport management system to track orders in real time, keep all the documentation records digitally, generate payments easily , to scale the buisiness across other countries and to increase productivity. This will increase co-ordination among stakeholders and build trust among customers. 
 
+
+\section{Problem Statement}
+\subsection{Current Situation: } 
+In many organizations managing vehicle transportation is still done manually. There is no proper automated way of managing the transportation. There is not any tracking system of the vehicles and for monitoring the current status of the shipment.  Records of the customers are kept in record books, all vehicles details, requested orders, verified orders and shipment details are stored on record books due to which data loss risk increases. One problem is that the bills and payments are done manually there is no auto mated way of calculating bills and keeping the records and no online payment method is available for the transactions. 
+\subsection{Identified Problem:}
+The customers face difficulties to track their vehicles and the organizations also face difficulty to manage the tracking and monitor the vehicles status effectively, as everything is done in a traditional way keeping the records in record books which may cause in loss of records, its duplication or inefficiency.
+On the other hand, the organization or the administration also face problems in maintaining the proper schedules, routes and vehicle assessments efficiently. This lack of coordination leads to many problems, like time waste, customer satisfaction, poor management and loss of records.
+Additionally, the organizations having no automated system also face a problem which is payment, manually managing bills and payments causes confusion or misleads. Mostly it causes confusion when customer pays bill but, in response he would not get in novice. As the receipts of the payment or not online any one can steal them.
+\subsection{Need for the System:}
+Therefore, there is a need for a computerized transportation management system which keeps tracking the vehicles location, there current location expected delivery time and time when the vehicle is shipped.
+ Along with the tracking of the vehicle this system also manages the records of the vehicles, customers and the employees working in the organization. This system manages the bills and payments and generates auto recipients.
+
+\section{Project Objectives}
+\subsection{Main Objective:}
+The main object of this project is to design and develop a computerized vehicle transportation management system which demonstrates the problems and issues faced in a manual transportation system as described above in problem statement.
+\subsection{Specific Objectives:}
+The objectives of this project are:
+
+\begin{enumerate}
+    \item To manage the tracking of vehicles and monitor the current status.
+    \item To automate the vehicles tracking time when it was shipped and the expected delivery time.
+    \item To make a digital database to keep records of customers and vehicles to reduce data loss and increase the data management efficiency.
+    \item To maintain a proper bill calculation and a payment method to improve the payments and generates recipients.
+    \item To enhance the coordination with customer and the organization, administrators and stockholder through a proper system.
+\end{enumerate}
+
+\section{User Identification}
+\subsection{Overview:}
+This Vehicle Transportation Management System is designed to manage and monitor the transportation of vehicles between different locations and serve different types of users, where each user interacts with the system in their own way. Identifying all stakeholders is very important to ensure that the system works efficiently, fulfills the requirements of all users, and supports effective communication. In this system, each user plays an important role in the overall functionality, management, and success of the transportation process.
+
+\subsection{Specified Users:}
+The key users identified in this system are as follows:
+
+\begin{enumerate}
+    \item \textbf{Customer:} Customers are individuals who request transportation of vehicles. They use the system to register, provide vehicle details, check transportation status, and view delivery dates and times. The system provides real-time information related to their requests.
+    
+    \item \textbf{Transport Management:} This user is responsible for monitoring and managing the overall transportation process. They handle customer requests, assign vehicles for shipment, track vehicle locations, and ensure that vehicles are delivered safely and on time. The management also verifies customer requests and delivery records.
+    
+    \item \textbf{System Administration:} The administrator manages all users, keeps records of customers, employees, and other system users, and maintains user accounts. They manage transportation schedules, vehicle records, and ensure database security. The administrator also ensures that all operations are recorded correctly and that the system functions smoothly without technical issues.
+    
+    \item \textbf{Finance Department:} This department manages all billing and payment-related activities. The finance team ensures that all transactions are properly handled and recorded. They verify completed deliveries, generate invoices for customers, and maintain accurate payment records to avoid financial discrepancies.
+    \item \textbf{Marketing Department:} The marketing team uses the system to manage and promote transportation services. the persons which are the regular customers are also be given access to the marketing. they can also be a part of the marketing help in promoting the transportation services from their contacts. They analyze customer requests, monitor demand trends, and plan marketing campaigns based on service usage data. This helps the organization attract new customers and improve overall service visibility.
+
+\end{enumerate}
+
