@@ -1,0 +1,273 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\geometry{
+  left=30mm,
+  right=30mm,
+  top=25mm,
+  bottom=25mm
+}
+
+% Custom commands (easy to reuse)
+\newcommand{\ProjectTitle}{Vehicle Transport Management Software}
+\newcommand{\SubjectTitle}{Software Engineering Project Proposal}
+\newcommand{\Department}{Department of Computer Science}
+\newcommand{\University}{Your University Name}
+\newcommand{\TeamCaption}{Team Members}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+\begin{center}
+    \includegraphics[width=4cm]{logo.png}
+\end{center}
+
+{\Huge\bfseries Namal University Mianwali \par}
+  \vspace{2.0cm}
+   {\large \Department \par}
+  \vspace{1.0cm}
+   {\Large\bfseries \SubjectTitle \par}
+  \vspace{1cm}
+{\large\bfseries Title: \par}
+  \vspace{0.5cm}
+
+  {\large\bfseries \ProjectTitle \par}
+  \vspace{0.5cm}
+
+ 
+ 
+
+  
+
+
+  \begin{spacing}{1.1}
+  \RaggedCenter
+  {\bfseries \TeamCaption:}\par
+  \vspace{0.6cm}
+  \begin{tabular}{ >{\bfseries}l l }
+    Name:       & Momina Umar \\
+    Roll No.:   & NUM-BSCS-2024-36 \\
+    Email:      & {bscs24f36@namal.edu.pk} \\
+    \addlinespace
+    Name:       & Tahira Hanif \\
+    Roll No.:   &  NUM-BSCS-2024-76\\
+    Email:      & {bscs24f76@namal.edu.pk}\\ 
+     \addlinespace
+     Name:       & Mubashir Aman \\
+    Roll No.:   &  NUM-BSCS-2024-37\\
+    Email:      & {bscs24f37@namal.edu.pk}
+    % repeat rows as needed
+  \end{tabular}
+  \end{spacing}
+
+  \vfill
+ \begin{right}{\small \textbf{Submission Date: November 9, 2025}}\\[1cm]
+ \end{right}
+  {\large \today\par}
+\end{titlepage}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\setcounter{tocdepth}{2} % 2 = include sections and subsections
+\tableofcontents
+\newpage
+\begin{center}
+    \textbf{\Large REQUIREMENT PROVIDER AGREEMENT}\\
+    \vspace{0.3cm}
+    \large Vehicle Transport Management System (VTMS)\\
+    \vspace{0.8cm}
+    \normalsize \today
+\end{center}
+
+\vspace{1cm}
+
+\textbf{This Agreement is entered into on} \underline{\hspace{1cm}04} / \underline{\hspace{1cm}Nov} / \underline{\hspace{1cm}2025} (DD/MM/YYYY)
+
+\textbf{BETWEEN}
+
+\textbf{1. Mr. Ahtesham Abdullah}\\
+Final-Year Student\\
+Schechian University, China\\
+(Hereinafter referred to as the \textbf{Requirement Provider})
+
+\textbf{AND}
+
+\textbf{2. The Development Team consisting of:}
+\begin{itemize}
+    \item Ms. Tahira Hanif
+    \item Ms. Momina Umar
+    \item Mr. Mubashir Aman
+\end{itemize}
+(Hereinafter collectively referred to as the \textbf{Development Team})
+
+\vspace{0.8cm}
+
+\textbf{THE PARTIES MUTUALLY AGREE AS FOLLOWS:}
+
+\begin{enumerate}
+    \item \textbf{Project Purpose}\\
+    The Requirement Provider has proposed the development of a \textbf{Transport Exchange System (TES)}. The Development Team agrees to design, develop, test, and deliver the complete system as an academic software engineering project.
+
+    \item \textbf{Obligations of the Requirement Provider}
+    \begin{itemize}
+        \item Provide complete and final requirements no later than \underline{\hspace{4.5cm}}.
+        \item Attend weekly meetings and respond to queries/feedback within 48 hours.
+        \item Review and approve all milestones (design, prototype, final version).
+        \item Maintain confidentiality of all source code and project materials.
+    \end{itemize}
+
+    \item \textbf{Obligations of the Development Team}
+    \begin{itemize}
+        \item Develop the system strictly according to the agreed requirements.
+        \item Provide weekly progress updates and live demonstrations.
+        \item Deliver complete source code, documentation, deployed application, and user manual.
+        \item Offer 30 days of free post-delivery support for bug fixes.
+    \end{itemize}
+
+    \item \textbf{Intellectual Property}
+    \begin{itemize}
+        \item The Requirement Provider retains ownership of the project concept and idea.
+        \item The Development Team retains ownership of the source code and implementation.
+        \item Upon final acceptance, the Development Team grants the Requirement Provider a perpetual, royalty-free, worldwide license to use, modify, and distribute the software for any purpose.
+    \end{itemize}
+
+    \item \textbf{Confidentiality, Ethics \& Governing Law}
+    \begin{itemize}
+        \item Both parties shall treat all shared information, code, designs, and communications as strictly confidential and shall not disclose them to any third party without written consent.
+        \item Both parties agree to act honestly, ethically, and in good faith throughout the project duration.
+        \item This agreement shall be governed by and construed in accordance with the laws of Pakistan.
+    \end{itemize}
+
+    \item \textbf{Changes \& Termination}
+    \begin{itemize}
+        \item Any change in requirements after the freeze date must be mutually agreed in writing.
+        \item Either party may terminate this agreement with 10 days written notice.
+    \end{itemize}
+\end{enumerate}
+
+\vfill
+
+\textbf{IN WITNESS WHEREOF}, the parties hereby execute this agreement:
+
+\vspace{1.2cm}
+
+\begin{tabular}{p{8cm} p{8cm}}
+    \centering
+    \underline{\hspace{7cm}} & \underline{\hspace{7cm}} \\
+    \textbf{Ahtesham Abdullah} & \textbf{Tahira Hanif} \\
+    \textit{Requirement Provider} & \textit{Team Member} \\
+   
+    
+    & \underline{\hspace{7cm}} \\
+    & \textbf{Momina Umar} \\
+    & \textit{Team Member} \\
+   
+    
+    & \underline{\hspace{7cm}} \\
+    & \textbf{Mubashir Aman} \\
+    & \textit{Team Member} \\
+   
+\end{tabular}
+
+\vfill
+
+\begin{center}
+    \textit{Page 1 of 2}
+\end{center}
+
+\clearpage
+
+\begin{center}
+    \textbf{\Large SIGNATURE OF REQUIREMENT PROVIDER}\\
+    \vspace{2cm}
+     \includegraphics[width=5cm,keepaspectratio]{sign.jpg} \\[0.3cm] % make sure sign.png is in same folder
+    \rule{12cm}{0.5pt}\\
+    \textbf{Ahtesham Abdullah}\\
+    Requirement Provider\\
+     Date: \underline{4 Nov, 2025}
+    
+    \vspace{2.5cm}
+    
+    \textbf{\Large SIGNATURES OF DEVELOPMENT TEAM}\\
+    \vspace{1.5cm}
+\begin{tabular}{p{7cm} p{7cm}}
+    \raggedright \includegraphics[width=5cm,keepaspectratio]{signature(1).png} &
+    \raggedleft \includegraphics[width=5cm,keepaspectratio]{signature.png} \\
+    \raggedright \rule{5cm}{0.5pt} & \raggedleft \rule{5cm}{0.5pt} \\
+    \raggedright \textbf{Tahira Hanif} & \raggedleft \textbf{Momina Umar} 
+\end{tabular}
+
+\vspace{1.5cm}
+ \RaggedCenter \includegraphics[width=5cm,keepaspectratio]{signature(2).png} &
+\rule{12cm}{0.5pt} % for next signature or line
+
+    \textbf{Mubashir Aman}\\
+  
+
+\end{center}
+
+\vfill
+
+\begin{center}
+    \textit{This agreement consists of 2 pages. Both pages must be signed.}\\
+    \textit{Page 2 of 2}
+\end{center}
+\section{Introduction}
+Efficient vehicle transportation is important for timely deliveries for building the trust of customers in any organization. Many Origanizations still rely on manual system of tracking records for vehical transportation which leads to many complications including risks of lost of data , waste of time ,difficuly in keeping billing records ,duplication of data and also mismanagement of tracking of orders. To configure all these issues , we are building a computarized transport management system to track orders in real time, keep all the documentation records digitally, generate payments easily , to scale the buisiness across other countries and to increase productivity. This will increase co-ordination among stakeholders and build trust among customers. 
+
+
+\section{Problem Statement}
+\subsection{Current Situation: } 
+In many organizations managing vehicle transportation is still done manually. There is no proper automated way of managing the transportation. There is not any tracking system of the vehicles and for monitoring the current status of the shipment.  Records of the customers are kept in record books, all vehicles details, requested orders, verified orders and shipment details are stored on record books due to which data loss risk increases. One problem is that the bills and payments are done manually there is no auto mated way of calculating bills and keeping the records and no online payment method is available for the transactions. 
+\subsection{Identified Problem:}
+The customers face difficulties to track their vehicles and the organizations also face difficulty to manage the tracking and monitor the vehicles status effectively, as everything is done in a traditional way keeping the records in record books which may cause in loss of records, its duplication or inefficiency.
+On the other hand, the organization or the administration also face problems in maintaining the proper schedules, routes and vehicle assessments efficiently. This lack of coordination leads to many problems, like time waste, customer satisfaction, poor management and loss of records.
+Additionally, the organizations having no automated system also face a problem which is payment, manually managing bills and payments causes confusion or misleads. Mostly it causes confusion when customer pays bill but, in response he would not get in novice. As the receipts of the payment or not online any one can steal them.
+\subsection{Need for the System:}
+Therefore, there is a need for a computerized transportation management system which keeps tracking the vehicles location, there current location expected delivery time and time when the vehicle is shipped.
+ Along with the tracking of the vehicle this system also manages the records of the vehicles, customers and the employees working in the organization. This system manages the bills and payments and generates auto recipients.
+
+\section{Project Objectives}
+\subsection{Main Objective:}
+The main object of this project is to design and develop a computerized vehicle transportation management system which demonstrates the problems and issues faced in a manual transportation system as described above in problem statement.
+\subsection{Specific Objectives:}
+The objectives of this project are:
+
+\begin{enumerate}
+    \item To manage the tracking of vehicles and monitor the current status.
+    \item To automate the vehicles tracking time when it was shipped and the expected delivery time.
+    \item To make a digital database to keep records of customers and vehicles to reduce data loss and increase the data management efficiency.
+    \item To maintain a proper bill calculation and a payment method to improve the payments and generates recipients.
+    \item To enhance the coordination with customer and the organization, administrators and stockholder through a proper system.
+\end{enumerate}
+
+\section{User Identification}
+\subsection{Overview:}
+This Vehicle Transportation Management System is designed to manage and monitor the transportation of vehicles between different locations and serve different types of users, where each user interacts with the system in their own way. Identifying all stakeholders is very important to ensure that the system works efficiently, fulfills the requirements of all users, and supports effective communication. In this system, each user plays an important role in the overall functionality, management, and success of the transportation process.
+
+\subsection{Specified Users:}
+The key users identified in this system are as follows:
+
+\begin{enumerate}
+    \item \textbf{Customer:} Customers are individuals who request transportation of vehicles. They use the system to register, provide vehicle details, check transportation status, and view delivery dates and times. The system provides real-time information related to their requests.
+    
+    \item \textbf{Transport Management:} This user is responsible for monitoring and managing the overall transportation process. They handle customer requests, assign vehicles for shipment, track vehicle locations, and ensure that vehicles are delivered safely and on time. The management also verifies customer requests and delivery records.
+    
+    \item \textbf{System Administration:} The administrator manages all users, keeps records of customers, employees, and other system users, and maintains user accounts. They manage transportation schedules, vehicle records, and ensure database security. The administrator also ensures that all operations are recorded correctly and that the system functions smoothly without technical issues.
+    
+    \item \textbf{Finance Department:} This department manages all billing and payment-related activities. The finance team ensures that all transactions are properly handled and recorded. They verify completed deliveries, generate invoices for customers, and maintain accurate payment records to avoid financial discrepancies.
+    \item \textbf{Marketing Department:} The marketing team uses the system to manage and promote transportation services. the persons which are the regular customers are also be given access to the marketing. they can also be a part of the marketing help in promoting the transportation services from their contacts. They analyze customer requests, monitor demand trends, and plan marketing campaigns based on service usage data. This helps the organization attract new customers and improve overall service visibility.
+
+\end{enumerate}
+
