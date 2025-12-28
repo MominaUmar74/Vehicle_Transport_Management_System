@@ -10,12 +10,12 @@ The Vehicle Transport Management System (VTMS) is a web-based software solution 
 
 Team Members
 
-Name	         Roll No	           Email
-Tahira Hanif	 NUM-BSCS-2024-76	  bscs24f76@namal.edu.pk
 
-Momina Umar	     NUM-BSCS-2024-36	  bscs24f36@namal.edu.pk
+1.   Tahira Hanif	      NUM-BSCS-2024-76	      bscs24f76@namal.edu.pk
 
-Mubashir Aman	 NUM-BSCS-2024-37	  bscs24f37@namal.edu.pk
+2.  Momina Umar 	      NUM-BSCS-2024-36   	    bscs24f36@namal.edu.pk
+
+3.   Mubashir Aman	     NUM-BSCS-2024-37	       bscs24f37@namal.edu.pk
    
    Submission Details
 
