@@ -1,10 +1,10 @@
 # Vehicle Transport Management System (VTMS)
-Software Engineering Semester Project
+##Software Engineering Semester Project
 
-Department of Computer Science
-Namal University Mianwali
+###Department of Computer Science
+###Namal University Mianwali
 
-  Project Overview
+  ##Project Overview
 
 The Vehicle Transport Management System (VTMS) is a web-based software solution designed to automate and manage vehicle transportation operations. The system replaces manual record-keeping with a computerized platform that supports vehicle booking, shipment tracking, billing, payments, and administrative management. VTMS improves efficiency, reduces errors, enhances customer trust, and ensures real-time coordination among stakeholders.
 
