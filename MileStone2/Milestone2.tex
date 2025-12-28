@@ -1,0 +1,238 @@
+
+
+\subsection{External Interface Requirements}
+
+\subsubsection{User Interface Design}
+
+The Vehicle Transport Management System (VTMS) shall provide a simple, intuitive, and user-friendly web-based interface to support all system users, including customers, transport managers, and administrators. The interface is designed to ensure ease of use, reduce user errors, and support efficient interaction with system functionalities.
+
+\textbf{Design Visuals:}  
+This includes the following artifacts:
+\begin{itemize}
+    \item Detailed wireframes and mock-ups for various pages of the website, including home pages, product detail pages, and checkout pages, showing layout, placement of elements, and visual design.
+    \item Interactive prototypes or mock-ups demonstrating user interactions and transitions between pages.
+\end{itemize}
+
+\textbf{Interface Requirements:}
+\begin{itemize}
+    \item \textbf{Web-Based Interface:} VTMS shall be accessible through standard web browsers without requiring additional software installation. Supported browsers include Google Chrome, Mozilla Firefox, and Microsoft Edge.
+    
+    \item \textbf{Role-Based Interface Views:} Different layouts and functionalities shall be presented based on user roles. Customers, transport managers, and administrators will each have access to role-specific dashboards and controls relevant to their responsibilities.
+    
+    \item \textbf{Responsive Interface:} The interface shall be responsive, supporting multiple devices and screen sizes (desktop dashboards, mobile booking, and finance modules) for flexibility, scalability, and ease of maintenance.
+    
+    \item \textbf{Consistency and Navigation:} The interface shall maintain consistent layout, color schemes, and navigation controls across all pages. Clear menus, buttons, and labels shall help users easily locate system features.
+    
+    \item \textbf{Forms and Input Validation:} Structured input forms shall be provided for registration, booking, payments, and shipment updates. Inputs shall be validated, and clear error messages shall guide users in correcting invalid entries.
+    
+    \item \textbf{Filtering Options:} Clear filtering options shall be provided to help users quickly find their desired vehicles, enhancing the customer experience.
+    
+    \item \textbf{Shipment Tracking Display:} The interface shall include a dedicated view for shipment status and progress, providing real-time or near real-time updates in a clear format.
+    
+    \item \textbf{Notification and Feedback Messages:} Notifications related to booking confirmation, payment status, shipment updates, delivery confirmation, and refund processing shall be displayed clearly and concisely.
+    
+    \item \textbf{Accessibility and Usability:} The interface shall support users with minimal technical experience, using readable fonts, adequate contrast, and responsive layouts to improve accessibility and usability.
+\end{itemize}
+
+
+\subsubsection{Hardware and Computing Environment}
+
+The Vehicle Transport Management System (VTMS) is designed to operate efficiently across commonly available hardware devices and computing environments.
+
+\textbf{Mobile Devices (Future Support):}
+\begin{enumerate}
+    \item VTMS may support mobile devices such as Android and iOS smartphones in future versions, allowing users to access booking, payment, and shipment tracking features on the go.
+    \item A responsive interface design will ensure compatibility with various screen sizes and resolutions.
+\end{enumerate}
+
+\textbf{Desktop and Laptop Systems:}
+\begin{enumerate}
+    \item The VTMS web application is optimized for desktop and laptop systems using modern web browsers such as Google Chrome, Mozilla Firefox, and Microsoft Edge.
+    \item The system supports standard multitasking workflows, allowing users to access multiple system pages or browser tabs simultaneously.
+\end{enumerate}
+
+\textbf{Peripheral Devices:}
+\begin{enumerate}
+    \item VTMS supports standard input and output devices, including keyboards, mice, and display screens, required for system operation.
+    \item Printer support is included for generating invoices, transport reports, and administrative records.
+\end{enumerate}
+
+\subsubsection{Software Interfaces}
+
+
+The Vehicle Transport Management System (VTMS) interacts with multiple software components and external systems to ensure smooth and reliable operation.
+
+\textbf{Authentication and Session Management:}
+\begin{enumerate}
+    \item VTMS provides secure user authentication using username/email and password-based login mechanisms.
+    \item Session management ensures that authenticated users remain logged in during active sessions while preventing unauthorized access and session misuse.
+\end{enumerate}
+
+\textbf{Database Management Systems:}
+\begin{enumerate}
+    \item Structured system data, including user information, vehicle records, shipment details, and payment transactions, is stored in a centralized relational database.
+    \item The database system ensures data consistency, integrity, and secure access for all system operations.
+\end{enumerate}
+
+\textbf{Payment Gateway Integration:}
+\begin{enumerate}
+    \item VTMS integrates with third-party payment gateway software to securely process advance and final payments.
+    \item The system relies on these software interfaces for transaction authorization, confirmation, and payment status updates.
+\end{enumerate}
+
+\textbf{Notification Services:}
+\begin{enumerate}
+    \item VTMS interfaces with email and SMS services to deliver notifications related to booking confirmations, payment status, shipment updates, delivery confirmations, and refunds.
+    \item These services ensure timely communication between the system and its users.
+\end{enumerate}
+
+\textbf{Mapping and Tracking Services (Future Support):}
+\begin{enumerate}
+    \item Future versions of VTMS may integrate with third-party mapping or tracking software to enhance shipment location visualization and route monitoring.
+    \item These integrations will support improved tracking accuracy and delivery insights.
+\end{enumerate}
+
+
+\subsubsection{Communication Interfaces}
+
+VTMS ensures smooth and reliable communication between control centers and user applications.
+
+\textbf{Network Protocols:}
+\begin{enumerate}
+    \item Data is transmitted using HTTPS, ensuring secure communication between vehicles, servers, and client applications.
+\end{enumerate}
+
+\textbf{Error Recovery:}
+\begin{enumerate}
+    \item VTMS logs communication errors and performs automatic retries for failed data transmissions to reduce system downtime.
+    \item A detailed error reporting system allows operators to report connectivity or synchronization issues directly to technical support.
+\end{enumerate}
+
+\subsection{Performance Requirements}
+
+
+The Vehicle Transport Management System (VTMS) shall meet the following performance criteria:
+
+\textbf{System Response Time:}
+\begin{itemize}
+    \item User actions (e.g., login, search vehicles, update shipment status) shall be completed within 2–3 seconds under normal load.
+    \item Payment processing and confirmation shall complete within 5 seconds.
+\end{itemize}
+
+\textbf{Concurrent Users:}
+\begin{itemize}
+    \item VTMS shall support at least 500 concurrent users performing different actions (customers, administrators, finance staff, and transport staff).
+    \item The system shall be scalable to handle increased user loads in the future without performance degradation.
+\end{itemize}
+
+\textbf{Database Performance:}
+\begin{itemize}
+    \item Database queries for vehicle browsing, shipment tracking, and payment history shall return results within 2 seconds for up to 10,000 records.
+\end{itemize}
+
+\textbf{Transaction Throughput:}
+\begin{itemize}
+    \item The system shall process at least 50 vehicle booking transactions per minute without errors.
+    \item Payment transactions must maintain 100\% reliability with real-time confirmation.
+\end{itemize}
+
+\textbf{Availability and Uptime:}
+\begin{itemize}
+    \item VTMS shall maintain 99.5\% uptime, ensuring continuous availability for customers and staff.
+    \item Maintenance operations should not affect live users or should be scheduled during low-traffic periods.
+\end{itemize}
+
+\textbf{Error Handling:}
+\begin{itemize}
+    \item In case of system failure (server crash, network issue), VTMS shall gracefully recover without data loss.
+    \item Users shall receive informative error messages within 1–2 seconds.
+\end{itemize}
+
+\subsection{Software System Attributes}
+
+\subsubsection{Security}
+The Vehicle Transport Management System (VTMS) shall implement the following security measures:
+
+\begin{itemize}
+    \item \textbf{Password Protection:} All user passwords shall be encrypted to ensure secure storage and prevent unauthorized access.
+    \item \textbf{Role-Based Access Control:} Access to system features and data shall be controlled based on user roles, ensuring that customers, transport staff, finance staff, and administrators only access relevant functionalities.
+\end{itemize}
+\subsubsection{Reliability}
+
+
+The Vehicle Transport Management System (VTMS) shall ensure system reliability through the following measures:
+
+\begin{itemize}
+    \item \textbf{Data Protection:} The system shall prevent data loss under normal operation and in the event of system failures.
+    \item \textbf{Regular Backups:} Regular backups of all critical data shall be maintained to enable recovery in case of unexpected failures.
+\end{itemize}
+
+\subsubsection{Maintainability}
+
+
+The Vehicle Transport Management System (VTMS) shall be designed to support easy maintenance and updates:
+
+\begin{itemize}
+    \item \textbf{Modular Design:} The system shall be modular, allowing individual components to be updated or replaced without affecting other parts of the system.
+    \item \textbf{Ease of Updates:} The system architecture shall facilitate straightforward implementation of new features, bug fixes, and improvements.
+\end{itemize}
+
+\subsection{Other Requirements}
+
+
+
+
+\subsubsection{Database Requirements}
+
+The Vehicle Transport Management System (VTMS) shall use a centralized database to ensure efficient and reliable data management:
+
+\begin{itemize}
+    \item \textbf{Centralized Database:} A single, centralized database shall store all system data, including user information, vehicle records, shipment details, and payment transactions.
+    \item \textbf{Data Integrity:} The database shall enforce data integrity constraints to prevent corruption and ensure consistency across all records.
+\end{itemize}
+\subsubsection{Operational Requirements}
+The Vehicle Transport Management System (VTMS) shall operate under the following conditions:
+
+\begin{itemize}
+    \item \textbf{Internet Connectivity:} Stable internet connectivity shall be required for all users to access system functionalities, including vehicle booking, payment processing, and shipment tracking.
+\end{itemize}
+
+\subsubsection{Site Adaptation Requirements}
+
+
+The Vehicle Transport Management System (VTMS) shall support flexible deployment options:
+
+\begin{itemize}
+    \item \textbf{Deployment Options:} The system shall support both cloud-based deployment and local (on-premises) installation to accommodate different organizational needs.
+\end{itemize}
+
+% ===============================
+\section{Appendices}
+
+\subsection{Appendix A: Context Diagram}
+
+\textbf{Description:}  
+The context diagram illustrates the high-level interactions between the Vehicle Transport Management System (VTMS) and external entities, including customers, transport staff, administrators, and payment gateways (finance manager).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{untitled.png}
+    \caption{High-level context diagram of VTMS}
+    \label{fig:context_diagram}
+\end{figure}
+
+
+\subsection{Appendix B: Usecase Diagram}
+
+
+\textbf{Description:}  
+The use case diagram represents the functional interactions between system users and the Vehicle Transport Management System (VTMS). It highlights major system functionalities from the user perspective.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{usecase.png}
+    \caption{Use Case Diagram of VTMS}
+    \label{fig:usecase_diagram}
+\end{figure}
+
+\end{document}
