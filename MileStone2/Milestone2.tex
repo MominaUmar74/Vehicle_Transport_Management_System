@@ -1,4 +1,329 @@
+\section{Specific Requirements}
 
+\subsection{Functional Requirements}
+The functional requirements define the core features of the Vehicle Transport Management System (VTMS).
+
+
+\subsubsection{User Registration}
+
+
+\textbf{Introduction:}  
+The system shall provide a user registration feature that allows new users to create accounts by submitting valid personal information.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item User Name
+    \item Email Address
+    \item Contact Number
+    \item Password
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Validate user input for correctness and required format.
+    \item Check for duplicate accounts to ensure unique registration.
+    \item Encrypt the password for secure storage.
+    \item Store user data in the database.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Registration success confirmation message.
+    \item Error message if validation fails.
+\end{itemize}
+
+\subsubsection{User Authentication}
+
+
+\textbf{Introduction:}  
+The system shall authenticate users to provide secure access based on assigned roles.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Email or Username
+    \item Password
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Verify credentials against stored records.
+    \item Grant access according to user roles if credentials are valid.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Successful login message.
+    \item Access denied message if authentication fails.
+\end{itemize}
+
+
+\subsubsection{Browse Vehicles}
+
+\textbf{Introduction:}  
+The system shall allow users to browse all available vehicles without applying any filters.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item None (optional: category selection)
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Retrieve all vehicle records from the database for display.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item List of all available vehicles.
+    \item Vehicle detail view for selected vehicles.
+\end{itemize}
+
+
+\subsubsection{Search Vehicles}
+
+\textbf{Introduction:}  
+The system shall allow users to search for vehicles using specific filters to narrow down results, improving usability and helping users find relevant vehicles quickly.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Vehicle type
+    \item Price range
+    \item Brand
+    \item Optional filters (e.g., model year, fuel type)
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Query the database for vehicle records that match the specified search criteria.
+    \item Sort or prioritize results as needed to improve relevance.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Filtered list of available vehicles.
+    \item Detailed view for each selected vehicle.
+\end{itemize}
+
+
+\subsubsection{Manage Cart}
+
+\textbf{Introduction:}  
+The system shall allow customers to manage selected vehicles before purchase, enabling them to add or remove items and review the total cost.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Selected vehicles
+    \item Add/remove requests
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Update the cart based on user actions.
+    \item Recalculate the total cost of selected vehicles.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Updated cart summary.
+    \item Purchase confirmation (if user proceeds to checkout).
+\end{itemize}
+
+\subsubsection{Advance Payment Processing}
+
+
+\textbf{Introduction:}  
+The system shall process a 30\% advance payment to confirm vehicle transportation.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Payment details
+    \item Purchase ID
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Calculate the 30\% advance amount based on the total purchase.
+    \item Process the payment through a secure gateway.
+    \item Update the payment status in the system.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Payment confirmation receipt.
+    \item Notification sent to finance and transport management staff.
+\end{itemize}
+
+
+\subsubsection{Shipment Tracking}
+
+\textbf{Introduction:}  
+The system shall create shipment records and generate a unique tracking ID to monitor the shipment throughout its transit.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Booking confirmation
+    \item Shipment status updates
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Send shipment details to transport management.
+    \item Assign a unique tracking ID to the shipment.
+    \item Update the shipment location at each transit stage.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Tracking ID for the shipment.
+    \item Updated shipment status.
+\end{itemize}
+
+
+\subsubsection{Final Payment Processing}
+
+\textbf{Introduction:}  
+The system shall allow customers to complete the final payment and confirm successful delivery.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Remaining payment amount
+    \item Delivery confirmation
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Verify the final payment.
+    \item Send confirmation notifications to finance and transport management.
+    \item Update the delivery status in the system.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Final payment receipt.
+    \item Confirmed delivery status.
+\end{itemize}
+
+
+\subsubsection{Order Cancellation and Refund}
+
+\textbf{Introduction:}  
+The system shall support order cancellation by customers and apply a refund policy that deducts a fixed percentage of the advance payment when an order is cancelled.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Order ID
+    \item Cancellation request from customer
+    \item Advance payment amount
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Verify the order status upon receiving a cancellation request.
+    \item If the order is cancelled after the advance payment, deduct 50\% of the advance amount as a cancellation charge.
+    \item Calculate the refundable balance and update the system records.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Refund confirmation showing the deducted amount.
+    \item Updated payment and order status.
+    \item Notification sent to the customer and finance department.
+\end{itemize}
+
+\subsubsection{Notifications}
+
+\textbf{Introduction:}  
+The system shall provide notifications to users and staff regarding status updates, payments, and shipment tracking.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Event triggers (e.g., payment success, shipment dispatched, shipment delivered)
+    \item User contact details
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Generate notifications based on triggered events.
+    \item Send notifications to users and staff via email or SMS.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Notification messages delivered to users and staff.
+\end{itemize}
+
+\subsubsection{Administration and Reporting}
+
+
+\textbf{Introduction:}  
+The system shall allow administrators to manage users, maintain system data, and generate reports.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item User management actions (e.g., add, update, delete users)
+    \item Report generation requests
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Update system records based on administrator actions.
+    \item Enforce access control and permissions.
+    \item Compile and generate requested transport and management reports.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Updated system records.
+    \item Generated transport and management reports.
+\end{itemize}
+
+
+\subsubsection{Vehicle Management}
+
+\textbf{Introduction:}  
+Administrators shall be able to manage vehicle records, including adding, updating, or deleting vehicles.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Vehicle details (type, brand, price, availability)
+    \item Action type (add, update, delete)
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Validate input data for correctness and completeness.
+    \item Update the vehicle inventory based on the specified action.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Confirmation of the action taken.
+    \item Updated vehicle inventory list.
+\end{itemize}
+
+
+\subsubsection{Customer Feedback}
+
+\textbf{Introduction:}  
+The system shall allow customers to provide feedback and rate the transport service.
+
+\textbf{Inputs:}
+\begin{itemize}
+    \item Feedback text
+    \item Rating (1–5 stars)
+\end{itemize}
+
+\textbf{Processing:}
+\begin{itemize}
+    \item Validate the feedback and rating inputs.
+    \item Store feedback in the database for future reference.
+\end{itemize}
+
+\textbf{Outputs:}
+\begin{itemize}
+    \item Confirmation message to the customer.
+    \item Updated feedback database available for administrative review.
+\end{itemize}
 
 \subsection{External Interface Requirements}
 
