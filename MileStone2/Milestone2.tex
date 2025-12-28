@@ -1,329 +1,323 @@
-\section{Specific Requirements}
+\documentclass[12pt,a4paper]{article}
 
-\subsection{Functional Requirements}
-The functional requirements define the core features of the Vehicle Transport Management System (VTMS).
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{array}
+
+\geometry{
+  left=30mm,
+  right=30mm,
+  top=25mm,
+  bottom=25mm
+}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+
+\vspace*{1cm}
+
+{\Large\bfseries Vehicle Transport Management System (VTMS)\par}
+\vspace{0.4cm}
+{\large\bfseries Semester Project Proposal\par}
+
+\vspace{0.8cm}
+
+A project submitted in partial fulfilment of the requirements for the completion of\\
+Software Engineering course
+
+\vspace{1.5cm}
+
+\includegraphics[width=5cm]{logo.png}
+
+\vspace{1.5cm}
+
+\begin{tabular}{c l @{\hspace{3cm}} l}
+\textbf{} & \textbf{Name} & \textbf{Roll No} \\[0.3cm]
+1 & Tahira Hanif & NUM-BSCS-2024-76 \\
+2 & Momina Umer & NUM-BSCS-2024-36 \\
+3 & Mubashir Aman & NUM-BSCS-2024-37 \\
+\end{tabular}
+
+\vfill
+
+Department of Computer Science\\
+Namal University Mianwali
+
+\vspace{0.8cm}
+
+28th December, 2025
+
+\end{titlepage}
+\setcounter{tocdepth}{3} % include subsections and subsubsections
+
+\tableofcontents
+\newpage
+
+% ===============================
+\section{Introduction}
+Efficient vehicle transportation is very important in maintaining customer trust and en- suring a smooth and timely delivery of the vehicle. There are still many organizations who depend on traditional methods in transportation and shipment records and payments. The depend on this method often results in data loss, duplicate records, making trans- portation process late, billing errors, and also effects delivery tracking. To overcome this problem, this document provides the requirements for a Vehicle Transport Management System (VTMS). This system is designed to automate the vehicle purchasing, keeping the records of the vehicles and customers, track the shipment, and payment processing in order make an efficient process of transportation and improve the coordination among all the stockholders.
 
 
-\subsubsection{User Registration}
+\subsection{Purpose}
+\subsubsection{Overview of the Document}
+This System Requirements Specification (SRS) document provides a detailed description of the VTMS functionalities, objectives, and requirements. The primary goal is to guide the development process and ensure alignment with the expectations of all stakeholders, including project sponsors, developers, and users.
 
 
-\textbf{Introduction:}  
-The system shall provide a user registration feature that allows new users to create accounts by submitting valid personal information.
+\subsubsection{Purpose of the SRS}
 
-\textbf{Inputs:}
+The purpose of this document is to:
+
 \begin{itemize}
-    \item User Name
-    \item Email Address
-    \item Contact Number
-    \item Password
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Validate user input for correctness and required format.
-    \item Check for duplicate accounts to ensure unique registration.
-    \item Encrypt the password for secure storage.
-    \item Store user data in the database.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Registration success confirmation message.
-    \item Error message if validation fails.
-\end{itemize}
-
-\subsubsection{User Authentication}
-
-
-\textbf{Introduction:}  
-The system shall authenticate users to provide secure access based on assigned roles.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item Email or Username
-    \item Password
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Verify credentials against stored records.
-    \item Grant access according to user roles if credentials are valid.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Successful login message.
-    \item Access denied message if authentication fails.
-\end{itemize}
-
-
-\subsubsection{Browse Vehicles}
-
-\textbf{Introduction:}  
-The system shall allow users to browse all available vehicles without applying any filters.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item None (optional: category selection)
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Retrieve all vehicle records from the database for display.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item List of all available vehicles.
-    \item Vehicle detail view for selected vehicles.
-\end{itemize}
-
-
-\subsubsection{Search Vehicles}
-
-\textbf{Introduction:}  
-The system shall allow users to search for vehicles using specific filters to narrow down results, improving usability and helping users find relevant vehicles quickly.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item Vehicle type
-    \item Price range
-    \item Brand
-    \item Optional filters (e.g., model year, fuel type)
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Query the database for vehicle records that match the specified search criteria.
-    \item Sort or prioritize results as needed to improve relevance.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Filtered list of available vehicles.
-    \item Detailed view for each selected vehicle.
+    \item \textbf{Define Requirements:} Outline the functional and non-functional requirements for VTMS.
+    \item \textbf{Guide Development:} Serve as a reference for the development team to ensure the successful implementation of features.
+    \item \textbf{Align Stakeholders:} Clarify VTMS objectives for all stakeholders, ensuring mutual understanding and alignment.
 \end{itemize}
 
 
-\subsubsection{Manage Cart}
+\subsubsection{Intended Audience}
 
-\textbf{Introduction:}  
-The system shall allow customers to manage selected vehicles before purchase, enabling them to add or remove items and review the total cost.
+The SRS is designed to address the needs of diverse stakeholders involved in the development and deployment of VTMS.
 
-\textbf{Inputs:}
+\textbf{Stakeholders:}
 \begin{itemize}
-    \item Selected vehicles
-    \item Add/remove requests
+    \item \textbf{Transport Owners:} Ensure the system aligns with organizational objectives, such as operational efficiency, scalability, and customer satisfaction.
+    \item \textbf{Project Managers:} Monitor development progress and ensure resource allocation aligns with project timelines and goals.
 \end{itemize}
 
-\textbf{Processing:}
+\textbf{Development Teams:}
 \begin{itemize}
-    \item Update the cart based on user actions.
-    \item Recalculate the total cost of selected vehicles.
+    \item \textbf{Software Engineers:} Use detailed functional and non-functional requirements as a roadmap for implementation.
+    \item \textbf{System Architects:} Design scalable and secure infrastructure based on the specified requirements.
 \end{itemize}
 
-\textbf{Outputs:}
+\textbf{End-Users:}
 \begin{itemize}
-    \item Updated cart summary.
-    \item Purchase confirmation (if user proceeds to checkout).
-\end{itemize}
-
-\subsubsection{Advance Payment Processing}
-
-
-\textbf{Introduction:}  
-The system shall process a 30\% advance payment to confirm vehicle transportation.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item Payment details
-    \item Purchase ID
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Calculate the 30\% advance amount based on the total purchase.
-    \item Process the payment through a secure gateway.
-    \item Update the payment status in the system.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Payment confirmation receipt.
-    \item Notification sent to finance and transport management staff.
+    \item \textbf{Customers and Organizational Staff:} Ensure the system effectively supports vehicle booking, shipment tracking, billing, and management processes in a user-friendly and reliable manner.
 \end{itemize}
 
 
-\subsubsection{Shipment Tracking}
+\subsection{Scope}
 
-\textbf{Introduction:}  
-The system shall create shipment records and generate a unique tracking ID to monitor the shipment throughout its transit.
+\subsubsection{Product Identification}
+Vehicle Transport Management System (VTMS) is a web-based computerized plat- form which is designed to manage and monitor vehicle transportation services efficiently. This system supports transport manager’s administrators and customers by automating the vehicle purchase, billing, record management and shipment tracking.
 
-\textbf{Inputs:}
+
+\subsubsection{Product Features}
+
+\textbf{VTMS Will Provide:}
 \begin{itemize}
-    \item Booking confirmation
-    \item Shipment status updates
+    \item \textbf{User Services:} Enable users to register, browse available transport services, and place vehicle orders.
+    \item \textbf{Shipment Tracking:} Provide shipment tracking, with location updates when shipments reach specific checkpoints.
+    \item \textbf{Payment Management:} Allow users to make a 30\% advance payment and complete the remaining payment after delivery.
+    \item \textbf{Transport Manager Support:} Assist transport managers in selecting vehicles, updating shipment status, and managing deliveries.
+    \item \textbf{Administrative Controls:} Allow administrators to manage users, vehicles, schedules, orders, and system records.
+    \item \textbf{Notifications and Records:} Generate invoices, send payment notifications to customers, and maintain transportation records.
 \end{itemize}
 
-\textbf{Processing:}
+\textbf{VTMS Will Not Include (Initial Release):}
 \begin{itemize}
-    \item Send shipment details to transport management.
-    \item Assign a unique tracking ID to the shipment.
-    \item Update the shipment location at each transit stage.
+    \item Hardware-level GPS tracking devices.
+    \item AI-driven advanced route optimization.
+    \item A fully detailed user interface.
+    \item A mobile application (initial release is web-based only).
 \end{itemize}
 
-\textbf{Outputs:}
+\subsubsection{Goals and Benefits}
 \begin{itemize}
-    \item Tracking ID for the shipment.
-    \item Updated shipment status.
-\end{itemize}
-
-
-\subsubsection{Final Payment Processing}
-
-\textbf{Introduction:}  
-The system shall allow customers to complete the final payment and confirm successful delivery.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item Remaining payment amount
-    \item Delivery confirmation
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Verify the final payment.
-    \item Send confirmation notifications to finance and transport management.
-    \item Update the delivery status in the system.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Final payment receipt.
-    \item Confirmed delivery status.
+    \item \textbf{Reliability:} Reduces errors and confusion caused by manual record-keeping and billing processes.
+    \item \textbf{Customer Satisfaction:} Enhances customer trust through accurate tracking and timely delivery updates.
+    \item \textbf{Scalability:} Lays the foundation for future expansion and feature enhancements.
 \end{itemize}
 
 
-\subsubsection{Order Cancellation and Refund}
+\subsection{Overview}
 
-\textbf{Introduction:}  
-The system shall support order cancellation by customers and apply a refund policy that deducts a fixed percentage of the advance payment when an order is cancelled.
+\subsubsection{Document Structure}
 
-\textbf{Inputs:}
+This SRS document is organized as follows:
+\begin{enumerate}
+    \item \textbf{Introduction:} Describes the purpose, scope, and overview of the SRS.
+    \item \textbf{Overall Description:} Details user personas, system environment, assumptions, and constraints.
+    \item \textbf{Specific Requirements:} Provides in-depth functional and non-functional requirements.
+    \item \textbf{System Features:} Enumerates core features like user profiles, skill listings, messaging, and feedback.
+    \item \textbf{External Interface Requirements:} Explains interaction points such as APIs, user interface, and dependencies.
+    \item \textbf{Other Non-Functional Requirements:} Covers performance, scalability, security, and reliability aspects.
+    \item \textbf{Appendices and References:} Lists definitions, references, and additional resources.
+\end{enumerate}
+
+\subsection{Definitions, Acronyms, and Abbreviations}
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{4cm}|p{10cm}|}
+\hline
+\textbf{Term/Acronym} & \textbf{Definition} \\ \hline
+VTMS & Vehicle Transport Management System \\ \hline
+SRS & System Requirements Specification. \\ \hline
+UI/UX & User Interface/User Experience, defining how users interact with the platform. \\ \hline
+GitHub & A platform for version control and collaborative software development. \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{References}
+
+
+
+
+
+
+These references ensure the technical accuracy and alignment of VTMS development with industry standards and best practices.
+\subsubsection{Standards}
+\begin{enumerate}
+    \item IEEE Std 830-1984: IEEE Recommended Practice for Software Requirements Specifications. IEEE, 1984.
+    \item IEEE Std 1002-1987: IEEE Standard Taxonomy for Software Engineering Standards.
+\end{enumerate}
+\subsubsection{Technical Documentation}
+\begin{enumerate}
+    \item University Software Engineering Project Guidelines.
+\end{enumerate}
+\subsubsection{Development Tools}
+\begin{enumerate}
+    \item \LaTeX{} for documentation
+    \item GitHub
+    \item Figma
+\end{enumerate}
+
+% ===============================
+\section{General Description}
+This section provides a comprehensive overview of Vehicle Transport Management Sys- tem (VTMS), its context within related systems, major functionalities, user character- istics, and the constraints under which it operates. Rather than specifying detailed requirements, this section sets the stage for understanding those requirements by offering relevant background and descriptive elements.
+ 
+
+\subsection{Product Perspective}
+Vehicle Transport Management System is a standalone web application that operates independently to manage vehicle transportation operations. This system is not replace- ment of an existing software but it’s designed to automate the Transportation services like shipment record management, billing generation.
+
+
+\subsubsection{Operational Constraints}
+VTMS operates within defined environmental and development is subject to the following constraints.
+1.	System Interfaces: The system uses standardized APIs for third-party services such as authentication, notifications (optional) and payment.
+2.	User Interfaces: VTMS offers an intuitive web-based interface optimized for ac- cessibility.
+3.	Hardware Requirements: VTMS can operate on any internet-enabled device with a modern web browser. No specialized hardware is necessary.
+
+\subsection{Product Functions}
+
+The Vehicle Transport Management System (VTMS) is designed to support vehicle exchange operations through a set of integrated functional components. These components work together to perform vehicle purchase, tracking, billing, and record management.
+
+\begin{enumerate}
+    \item \textbf{User Registration:} VTMS allows users to create accounts and log in using valid credentials. The system ensures that customers, transport managers, finance staff, and administrators have access only to their relevant features.
+    
+    \item \textbf{Vehicle Browsing and Purchase:} Customers can browse available transportation options and view details such as vehicle types, prices, and availability. They can select a specific vehicle and submit a purchase request.
+    
+    \item \textbf{Payment Processing:} The system supports advance and final payments. Customers pay 30\% of the bill as an advance during purchase and the remaining amount after delivery. Payment details are recorded, and notifications and receipts are sent to the customer.
+    
+    \item \textbf{Shipment Tracking:} Upon submission of a purchase request, VTMS generates a shipment record with a unique tracking ID. The system tracks the shipment from dispatch to final destination, ensuring smooth and accurate delivery.
+    
+    \item \textbf{Notifications and Communications:} Automated notifications are sent to administrators, customers, and other relevant stakeholders regarding payment confirmation, shipment dispatch, delivery, and order cancellations.
+    
+    \item \textbf{Reporting:} VTMS generates transport, shipment, and payment reports to help management and finance teams monitor operations and maintain accurate records.
+\end{enumerate}
+
+\subsection{User Characteristics}
+
+
+
+
+\subsubsection{Educational Level and Background}
+VTMS is designed to support users with different educational backgrounds and varying levels of technical understanding:
+
 \begin{itemize}
-    \item Order ID
-    \item Cancellation request from customer
-    \item Advance payment amount
+    \item \textbf{Basic Users:} These include customers and staff with limited technical knowledge. The system provides simple and clear instructions to help them navigate the interface easily.
+    
+    \item \textbf{Intermediate Users:} Users with some technical background, such as transport staff, can access features like shipment tracking, status updates, and recording shipment details.
+    
+    \item \textbf{Advanced Users:} This group includes system administrators and technical staff with high technical proficiency. They manage user roles, identify and resolve system errors, and oversee all records related to vehicles and customers.
+\end{itemize}
+\subsubsection{Experience Levels}
+
+
+The Vehicle Transport Management System (VTMS) is designed to support users with varying levels of experience in using computerized systems:
+
+\begin{itemize}
+    \item \textbf{Beginner Users:} Users with little or no prior experience with transport management software. VTMS provides an intuitive interface, guided workflows, and clear instructions to help them perform basic tasks such as vehicle browsing, booking, payments, and shipment tracking with minimal training.
+    
+    \item \textbf{Intermediate Users:} Users with moderate experience, such as transport staff or frequent customers, who can efficiently manage routine operations. They handle shipment updates, vehicle assignments, payment verification, and customer coordination using standard system features.
+    
+    \item \textbf{Expert Users:} Experienced users, including system administrators and senior transport managers, with extensive system knowledge. They utilize advanced features such as system configuration, user management, report generation, data monitoring, and overall system supervision.
 \end{itemize}
 
-\textbf{Processing:}
+\subsection{Assumptions and Dependencies}
+The development, operation, and success of VTMS are influenced by various assumptions and dependencies. These elements play a crucial role in ensuring that the VTMS operates efficiently user needs. VTMS design and functionality rely on the following technical assumptions:
+\subsubsection{Technical Assumptions}
+
+
+The design and functionality of the Vehicle Transport Management System (VTMS) rely on the following technical assumptions:
+
 \begin{itemize}
-    \item Verify the order status upon receiving a cancellation request.
-    \item If the order is cancelled after the advance payment, deduct 50\% of the advance amount as a cancellation charge.
-    \item Calculate the refundable balance and update the system records.
+    \item \textbf{Stable Internet Connections:} VTMS assumes that users, including customers, transport managers, and administrators, have access to stable internet connections. While the system will be optimized for varying network conditions, real-time features such as shipment tracking, payment confirmation, and notifications may experience delays under poor connectivity.
+    
+    \item \textbf{Modern Web Browsers:} VTMS assumes that users will access the system through modern, supported web browsers such as Google Chrome, Mozilla Firefox, or Microsoft Edge. Using outdated or unsupported browsers may result in limited functionality, security vulnerabilities, or degraded user experience.
+    
+    \item \textbf{Secure Third-party Payment Gateway Integration:} VTMS assumes the availability and reliability of third-party payment gateways for processing advance and final payments. The accuracy, security, and availability of payment processing depend on these external services. Downtime or failure in the payment gateway may temporarily affect transaction processing.
+    
+    \item \textbf{Centralized Server and Database Availability:} The system assumes continuous availability of centralized servers and databases used to store user information, vehicle records, shipment data, and payment details. System performance and data accessibility depend on the stability and maintenance of the hosting infrastructure.
+    
+    \item \textbf{Real-Time Data Updates and Notifications:} VTMS assumes that real-time or near real-time data synchronization mechanisms will function reliably to update shipment status, delivery progress, and system notifications. Delays or failures in these mechanisms may impact timely information delivery to users.
 \end{itemize}
 
-\textbf{Outputs:}
+\subsubsection{Operational Dependencies}
+
+
+Several operational dependencies may impact the functionality and overall performance of the Vehicle Transport Management System (VTMS):
+
 \begin{itemize}
-    \item Refund confirmation showing the deducted amount.
-    \item Updated payment and order status.
-    \item Notification sent to the customer and finance department.
+    \item \textbf{Third-Party APIs:} VTMS relies on external services and APIs for essential operations, including payment processing, notification delivery (email or SMS), and potential map or location services for shipment tracking. The availability, reliability, and security of these services are critical for smooth system operation. Any changes, failures, or disruptions may affect transaction processing, communication with users, or shipment tracking features.
+    
+    \item \textbf{Compliance and Financial Services:} VTMS handles financial transactions, including advance and final payments, and relies on secure payment gateways and financial compliance mechanisms. The system must operate in accordance with applicable banking regulations and digital payment standards. Changes in payment service policies or regulatory requirements may require system updates to ensure continued compliance and uninterrupted service.
 \end{itemize}
 
-\subsubsection{Notifications}
+\subsubsection{User Behavior Assumptions}
 
-\textbf{Introduction:}  
-The system shall provide notifications to users and staff regarding status updates, payments, and shipment tracking.
 
-\textbf{Inputs:}
+The Vehicle Transport Management System (VTMS) operates under the following assumptions regarding user behavior:
+
 \begin{itemize}
-    \item Event triggers (e.g., payment success, shipment dispatched, shipment delivered)
-    \item User contact details
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Generate notifications based on triggered events.
-    \item Send notifications to users and staff via email or SMS.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Notification messages delivered to users and staff.
-\end{itemize}
-
-\subsubsection{Administration and Reporting}
-
-
-\textbf{Introduction:}  
-The system shall allow administrators to manage users, maintain system data, and generate reports.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item User management actions (e.g., add, update, delete users)
-    \item Report generation requests
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Update system records based on administrator actions.
-    \item Enforce access control and permissions.
-    \item Compile and generate requested transport and management reports.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Updated system records.
-    \item Generated transport and management reports.
+    \item \textbf{Accuracy and Integrity in Information Submission:} Users, including customers and organizational staff, are expected to provide accurate and truthful information during registration, vehicle booking, payment processing, and shipment updates. Correct entries are essential for reliable record keeping, shipment tracking, billing accuracy, and overall system effectiveness.
+    
+    \item \textbf{Responsible Use of Payment and Booking Features:} Users are assumed to responsibly use booking and payment functionalities, including making advance and final payments as defined and initiating cancellations only when necessary. Misuse of payment features or repeated incorrect transactions may affect system operations and financial reconciliation.
+    
+    \item \textbf{Engagement with System Notifications and Updates:} Users are expected to actively review system notifications related to payments, shipment status, and delivery confirmations. Timely attention to these updates is important for smooth transportation workflows and effective coordination between customers and transport management staff.
+    
+    \item \textbf{Compliance with Organizational Policies:} Users are assumed to adhere to organizational rules, refund policies, and VTMS usage guidelines. Misuse, policy violations, or unauthorized activities may require administrative intervention and could impact service continuity.
 \end{itemize}
 
 
-\subsubsection{Vehicle Management}
+\subsubsection{Future Enhancements}
 
-\textbf{Introduction:}  
-Administrators shall be able to manage vehicle records, including adding, updating, or deleting vehicles.
+The Vehicle Transport Management System (VTMS) is designed with future expansion and continuous improvement in mind. The following provisions reflect potential enhancements planned for future versions of the system:
 
-\textbf{Inputs:}
 \begin{itemize}
-    \item Vehicle details (type, brand, price, availability)
-    \item Action type (add, update, delete)
+    \item \textbf{Mobile Applications:} Future versions of VTMS may include mobile applications for Android and iOS platforms. Mobile access will allow customers and transport staff to manage bookings, receive real-time shipment updates, track deliveries, and receive notifications conveniently while on the move.
+    
+    \item \textbf{Advanced Tracking and Analytics Features:} VTMS may integrate advanced data analytics and intelligent tracking features to improve transportation efficiency. Potential enhancements include route optimization, delivery time predictions, and performance analysis to support better operational decision-making.
+    
+    \item \textbf{Increased User Load and System Scalability:} The system anticipates growth in users, vehicles, and shipment records over time. Future development may focus on improving scalability, server performance, load balancing, and database optimization to ensure continued reliability and availability.
 \end{itemize}
 
-\textbf{Processing:}
+\subsection{Design and Implementation Constraints}
+\subsubsection{System Constraints}
+
+The design and implementation of the Vehicle Transport Management System (VTMS) are influenced by several constraints:
+
 \begin{itemize}
-    \item Validate input data for correctness and completeness.
-    \item Update the vehicle inventory based on the specified action.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Confirmation of the action taken.
-    \item Updated vehicle inventory list.
-\end{itemize}
-
-
-\subsubsection{Customer Feedback}
-
-\textbf{Introduction:}  
-The system shall allow customers to provide feedback and rate the transport service.
-
-\textbf{Inputs:}
-\begin{itemize}
-    \item Feedback text
-    \item Rating (1–5 stars)
-\end{itemize}
-
-\textbf{Processing:}
-\begin{itemize}
-    \item Validate the feedback and rating inputs.
-    \item Store feedback in the database for future reference.
-\end{itemize}
-
-\textbf{Outputs:}
-\begin{itemize}
-    \item Confirmation message to the customer.
-    \item Updated feedback database available for administrative review.
-\end{itemize}
+    \item \textbf{Initial Focus on Web-Only Implementation:} The first release of VTMS will be web-based only. Mobile applications and platform-specific clients are not included initially to ensure timely delivery and efficient use of available development resources. The web-based implementation provides sufficient functionality for managing vehicle bookings, payments, and shipment tracking.
+    
+    \item \textbf{Budget and Timeline Limitations:} VTMS development is constrained by a predefined budget and academic project timeline. Advanced features, such as AI-based route optimization, predictive analytics, and hardware-integrated tracking solutions, are deferred to future versions. The primary focus is on implementing core transportation management features reliably within the given timeframe.
+    
+    \item \textbf{Limited Team Size:} VTMS is being developed by a small project team, which may limit rapid feature expansion and large-scale scalability in the initial phase. The development effort will prioritize code quality, system reliability, and maintaina
 
 \subsection{External Interface Requirements}
 
