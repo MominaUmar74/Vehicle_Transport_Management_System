@@ -81,9 +81,6 @@ Milestone 3 translates the approved SRS into a **complete system design**, ensur
 
 ### UML & DFD Artifacts
 
-* 📌 **Use Case Diagram**
-  🔗 *(Link will be added)*
-
 * 📌 **Data Flow Diagram – Level 1**
   🔗 *([Link](https://app.diagrams.net/?src=about#G1IBa3PPwJkU8muPNEltYAi7M4sujmwXEu#%7B%22pageId%22%3A%22wzwxThsYBGVyAbvD41E5%22%7D))*
 
@@ -119,7 +116,7 @@ Milestone 3 translates the approved SRS into a **complete system design**, ensur
 ## 🎨 **Prototypes**
 
 * 🧩 **Interactive Figma Prototype**
-  🔗 *[Link](https://www.figma.com/make/u9RvTVx6vVbwUL9VgOW273/Vehicle-Transport-Management-System?t=jnKzhCYNf0uZqWQc-1)*
+  🔗 *[Link](https://www.figma.com/community/file/1594775358558253744/vehicle-transport-management-system)*
 
 ---
 
