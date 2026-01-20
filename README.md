@@ -93,10 +93,10 @@ Milestone 3 translates the approved SRS into a **complete system design**, ensur
 *  **Activity Diagram(s)**
   
    *Shipment & Tracking*
-  🔗 *([Link](https://app.diagrams.net/?src=about)*
+  🔗 *([Link](https://drive.google.com/file/d/1UeZpGKx2lpMUr8VJjtjffXVUjacP9MY4/view?usp=drive_link)*
   
    *Order Work FLow*
-  🔗 *([Link](https://app.diagrams.net/?src=about))*
+  🔗 *([Link](https://drive.google.com/file/d/1lQ0n8szQ2khb_-jyYnOGyXiX6tAdJQvp/view?usp=drive_link)*
   
    *Order and Payment*
   🔗 *([Link](https://lucid.app/lucidchart/cc8ad20d-f2b1-4f3a-8aca-c7a8adb1a6f3/edit?viewport_loc=-3295%2C-4191%2C5366%2C2294%2C0_0&invitationId=inv_8dc33a94-e1e1-45b9-ae1c-bba582d955e1))*
