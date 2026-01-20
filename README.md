@@ -1,4 +1,4 @@
-# 🚚 **Vehicle Transport Management System (VTMS)**
+#  **Vehicle Transport Management System (VTMS)**
 
 ![Course](https://img.shields.io/badge/Course-Software%20Engineering-blue)
 ![Milestone](https://img.shields.io/badge/Milestones-1%20%7C%202%20%7C%203-success)
@@ -15,7 +15,7 @@
 
 ---
 
-## 📌 **Project Overview**
+##  **Project Overview**
 
 The **Vehicle Transport Management System (VTMS)** is a web-based software solution developed to digitize and manage vehicle transportation operations. The system replaces traditional manual record-keeping with a centralized platform that supports vehicle booking, shipment tracking, billing, secure payments, and administrative control.
 
@@ -23,7 +23,7 @@ VTMS improves operational efficiency, reduces human error, enhances transparency
 
 ---
 
-## 👥 **Project Team**
+## **Project Team**
 
 | Name              | Registration No  | Email                                                   |
 | ----------------- | ---------------- | ------------------------------------------------------- |
@@ -33,7 +33,7 @@ VTMS improves operational efficiency, reduces human error, enhances transparency
 
 ---
 
-## 📄 **Course & Project Information**
+##  **Course & Project Information**
 
 * **Course:** CSC-225 – Software Engineering
 * **Instructor:** Asia Batool
@@ -43,7 +43,7 @@ VTMS improves operational efficiency, reduces human error, enhances transparency
 
 ---
 
-# 🧩 **Milestone 1 – Requirements Gathering**
+#  **Milestone 1 – Requirements Gathering**
 
 Milestone 1 focuses on understanding the problem domain, identifying stakeholders, gathering requirements, and establishing a formal agreement with the Requirement Provider.
 
@@ -57,7 +57,7 @@ Milestone 1 focuses on understanding the problem domain, identifying stakeholder
 
 ---
 
-# 📘 **Milestone 2 – Software Requirements Specification (SRS)**
+#  **Milestone 2 – Software Requirements Specification (SRS)**
 
 Milestone 2 documents a complete **IEEE-compliant SRS** describing functional and non-functional requirements of VTMS.
 
@@ -71,26 +71,26 @@ Milestone 2 documents a complete **IEEE-compliant SRS** describing functional an
 
 ---
 
-# 🧠 **Milestone 3 – System Design & Prototyping**
+#  **Milestone 3 – System Design & Prototyping**
 
 Milestone 3 translates the approved SRS into a **complete system design**, ensuring traceability and readiness for implementation.
 
 ---
 
-## 🧩 **System Design Diagrams**
+##  **System Design Diagrams**
 
 ### UML & DFD Artifacts
 
-* 📌 **Data Flow Diagram – Level 1**
+*  **Data Flow Diagram – Level 1**
   🔗 *([Link](https://app.diagrams.net/?src=about#G1IBa3PPwJkU8muPNEltYAi7M4sujmwXEu#%7B%22pageId%22%3A%22wzwxThsYBGVyAbvD41E5%22%7D))*
 
-* 📌 **Data Flow Diagram – Level 2**
+*  **Data Flow Diagram – Level 2**
   🔗 *([Link](https://lucid.app/lucidchart/f0ccf000-2737-42cf-b963-78265e91edd5/edit?viewport_loc=-4267%2C-2051%2C4318%2C1846%2C0_0&invitationId=inv_5cbe917d-ed50-474d-aa4b-0bafb094d52f))*
 
-* 📌 **Sequence Diagram(s)**
+*  **Sequence Diagram(s)**
   🔗 *([Link](https://lucid.app/lucidchart/314ba7ca-dbd0-4e8d-9c1d-8ef03fcb97a9/edit?viewport_loc=-2668%2C1176%2C5244%2C2572%2C0_0&invitationId=inv_0165d610-908c-44cb-a794-cd9d2a8daf49))*
 
-* 📌 **Activity Diagram(s)**
+*  **Activity Diagram(s)**
   
    *Shipment & Tracking*
   🔗 *([Link](https://app.diagrams.net/?src=about)*
@@ -105,31 +105,31 @@ Milestone 3 translates the approved SRS into a **complete system design**, ensur
   🔗 *([Link](https://lucid.app/lucidchart/38fe5a14-3d99-437b-b470-415166804e94/edit?viewport_loc=-3302%2C1569%2C3966%2C1696%2C0_0&invitationId=inv_c8717c07-d12c-4504-9935-e2ad08b41b76))*
   
 
-* 📌 **Class Diagram**
+*  **Class Diagram**
   🔗 *(Link will be added)*
 
-* 📌 **Component Diagram**
+*  **Component Diagram**
   🔗 *([Link](https://drive.google.com/file/d/1w3I8YHMO7Xnd2BCQXHnyN53aOaGOVqu5/view?usp=sharing))*
 
 ---
 
-## 🎨 **Prototypes**
+##  **Prototypes**
 
-* 🧩 **Interactive Figma Prototype**
+*  **Interactive Figma Prototype**
   🔗 *[Link](https://www.figma.com/community/file/1594775358558253744/vehicle-transport-management-system)*
 
 ---
 
-## 🧑‍💼 **Requirement Provider Meetings**
+##  **Requirement Provider Meetings**
 
 Meeting minutes for all milestones are maintained and updated regularly.
 
-📄 **Meeting Minutes (Google Sheet):**
+ **Meeting Minutes (Google Sheet):**
 🔗 [https://docs.google.com/spreadsheets/d/10Ci_Rd_cnhUp01tXbc08ZwuwuvQA92xJTqesyysHfFY/edit?usp=sharing](https://www.figma.com/make/u9RvTVx6vVbwUL9VgOW273/Vehicle-Transport-Management-System?t=jnKzhCYNf0uZqWQc-1)
 
 ---
 
-## 📂 **Repository Structure**
+##  **Repository Structure**
 
 ```
 VTMS/
@@ -143,7 +143,7 @@ VTMS/
 
 ---
 
-## 📚 **References**
+##  **References**
 
 * IEEE Std 830 – Software Requirements Specification
 * IEEE Software Engineering Standards
@@ -151,7 +151,7 @@ VTMS/
 
 ---
 
-## ✅ **Project Status**
+##  **Project Status**
 
 * ✔ Milestone 1 – Completed
 * ✔ Milestone 2 – Completed
@@ -159,7 +159,7 @@ VTMS/
 
 ---
 
-### ⭐ Final Note
+###  Final Note
 
-This repository contains **all documentation, designs, prototypes, and validation artifacts** required for the Software Engineering semester project and strictly follows the approved SRS and milestone guidelines.
+This repository contains **all documentation, designs and prototypes** required for the Software Engineering semester project and strictly follows the approved SRS and milestone guidelines.
 
